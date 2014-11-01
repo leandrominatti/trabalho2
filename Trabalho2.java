@@ -3,11 +3,11 @@ import javax.swing.JOptionPane;
 public class Trabalho2 {
 
 	public class Cliente {
-		int codigo_cliente = 0; // código do cliente
-		String nome_cliente = null ; // nome do cliente
-		int idade_cliente = 0; // quantos anos o cliente tem
-		int ano_veiculo = 0; // O ano do carro em questão
-		double valor_veiculo = 0; // valor do MODELO do veículo na tabela FIPE
+		int codigo_cliente; // código do cliente
+		String nome_cliente; // nome do cliente
+		int idade_cliente; // quantos anos o cliente tem
+		int ano_veiculo; // O ano do carro em questão
+		double valor_veiculo; // valor do MODELO do veículo na tabela FIPE
 	}
 
 	static Cliente A[] = new Cliente[3]; // vetor do tipo Cliente
@@ -46,8 +46,7 @@ public class Trabalho2 {
 		while (menu != 11) {
 			switch (menu) {
 			case 1:
-				String[] cliente = null;
-				pegaDados(cliente);
+				pegaDados();
 				break;
 			case 2:
 
